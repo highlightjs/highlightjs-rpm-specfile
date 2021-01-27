@@ -25,7 +25,6 @@ function hljsDefineRpmSpecfile(hljs) {
     contains: [
         hljs.COMMENT('%dnl'),
         hljs.HASH_COMMENT_MODE,
-        hljs.APOS_STRING_MODE,
         hljs.QUOTE_STRING_MODE,
         {
             className: "type",
