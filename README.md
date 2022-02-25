@@ -15,7 +15,7 @@ If you're not using a build system and just want to embed this in your webpage:
 <script src="/path/to/highlightjs-rpm-specfile/rpm-specfile.js"></script>
 <script>
   hljs.registerLanguage('rpm-specfile', window.hljsDefineRpmSpecfile);
-  hljs.initHighlightingOnLoad();
+  hljs.highlightAll();
 </script>
 ```
 
@@ -26,7 +26,7 @@ var hljs = require('highlightjs');
 var hljsDefineRpmSpecfile = require('highlightjs-rpm-specfile');
 
 hljsDefineRpmSpecfile(hljs);
-hljs.initHighlightingOnLoad();
+hljs.highlightAll();
 ```
 
 ### Advanced
