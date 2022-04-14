@@ -21,6 +21,7 @@ var module = module ? module : {};     // shim for browser use
 
 function hljsDefineRpmSpecfile(hljs) {
   return {
+    name: "rpm-specfile",
     aliases: ['rpm', 'spec', 'rpm-spec', 'specfile'],
     contains: [
         hljs.COMMENT('%dnl'),
