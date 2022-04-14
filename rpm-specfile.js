@@ -35,8 +35,8 @@ function hljsDefineRpmSpecfile(hljs) {
             begin: /(%)(?:package|prep|generate_buildrequires|sourcelist|patchlist|build|description|install|verifyscript|clean|changelog|check|pre[a-z]*|post[a-z]*|trigger[a-z]*|files)/,
         },
         {
-            className: "link",
-            begin: /(%)(if|ifarch|ifnarch|ifos|ifnos|elif|elifarch|elifos|else|endif)/,
+            className: "built_in",
+            begin: /(%)(if|ifarch|ifnarch|ifos|ifnos|elif|elifarch|elifos|else|endif|bcond_(with|without)|bcond|define|global)/,
         },
         {
             className: "link",
