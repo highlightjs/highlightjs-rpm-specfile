@@ -37,7 +37,7 @@ function hljsDefineRpmSpecfile(hljs) {
         },
         {
             className: "link",
-            begin: /(%)(if|ifarch|ifnarch|ifos|ifnos|elif|elifarch|elifos|else|endif)/,
+            begin: /(%)(ifarch|ifnarch|ifos|ifnos|if|elifarch|elifos|elif|else|endif)/,
         },
         {
             className: "link",
