@@ -21,6 +21,7 @@ var module = module ? module : {};     // shim for browser use
 
 function hljsDefineRpmSpecfile(hljs) {
   return {
+    name: "rpm-specfile",
     aliases: ['rpm', 'spec', 'rpm-spec', 'specfile'],
     contains: [
         hljs.COMMENT('%dnl'),
@@ -36,7 +37,7 @@ function hljsDefineRpmSpecfile(hljs) {
         },
         {
             className: "built_in",
-            begin: /(%)(if|ifarch|ifnarch|ifos|ifnos|elif|elifarch|elifos|else|endif|bcond_(with|without)|bcond|define|global)/,
+            begin: /(%)(ifarch|ifnarch|ifos|ifnos|if|elifarch|elifos|elif|else|endif|bcond_(without|with)|bcond|define|global)/,
         },
         {
             className: "link",
